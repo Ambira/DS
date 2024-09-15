@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            background-color: darkcyan;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 20px;
+            position: relative; 
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul li:hover {
+            background-color: darkgoldenrod;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: darkcyan;
+            padding: 10px 0;
+        }
+
+        .dropdown li {
+            display: block;
+            padding: 10px 20px;
+        }
+
+        .dropdown li a {
+            color: white;
+        }
+
+        ul li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown li:hover {
+            background-color: darkgoldenrod;
+        }
+
+        .drop-item {
+            position: relative;
+        }
+
+        .sub-drop {
+            position: absolute;
+            background-color: darkcyan;
+            left: 100%;
+            top: 0;
+        }
+
+        .sub-drop li {
+            display: none;
+        }
+
+        .drop-item:hover .sub-drop li {
+            display: block;
+        }
+
+        .drop-cloth{
+            position: relative;
+        }
+
+        .sub-cloth {
+            position: absolute;
+            background-color: darkcyan;
+            left: 95px;
+            top: 0px;
+        }
+
+        .sub-cloth li {
+            display: none;
+        }
+
+        .drop-cloth:hover .sub-cloth li {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Title</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li>
+                <a href="#">Product</a>
+                <ul class="dropdown">
+                    <li class="drop-item"><a href="#">Laptop</a>
+                        <ul class="sub-drop">
+                            <li><a href="">Dell</a></li>
+                            <li><a href="">Mac</a></li>
+                            <li><a href="">Lenovo</a></li>
+                            <li><a href="">ASUS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Computer</a></li>
+                    <li><a href="">Smart Watch</a></li>
+                    <li><a href="">Smart TV</a></li>
+                    <li class="drop-cloth"><a href="">Clothes</a>
+                        <ul class="sub-cloth">
+                            <li><a href="#">Tops</a></li>
+                            <li><a href="#">Bottoms</a></li>
+                            <li><a href="#"></a>Dress</li>
+                            <li><a href="#"></a>Undergarment</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

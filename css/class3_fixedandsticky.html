@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB</title>
+
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 100px;
+            background-image: url('img/cover2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            color: aliceblue;
+            font-size: 40px;
+            padding: 30px;
+        }
+        nav{
+            height: 100px;
+            background-color: darkgoldenrod;
+            text-align: center;
+            padding: 0 40px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin-left: 20px;
+            text-shadow: 5px -2px s10px black;
+        }
+     
+
+        .imagesilder{
+            width: 100%;
+            height: 500px;
+            position: relative;
+    
+        }
+        .imagesilder img{
+            width: 100%;
+            height: 100%; 
+        }
+        .left{
+            font-size: 50px;
+            border: none;
+            background: transparent;
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 20px;
+        }
+        .right{
+            font-size: 50px;
+            border: none;
+            background: transparent;
+            color: white;
+            position: absolute;
+            top: 40%;
+            right: 20px;
+        }
+        /* card section  */
+        .card{
+           
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+          
+            margin: 10px 20px;
+        }
+        .card-section{
+            width: 300px;
+            height: 300px;
+            background-color: darkcyan;
+            box-shadow: -1px -1px 3px black;
+        }
+        .card-img{
+            width: 300px;
+            height: 150px;
+            overflow: hidden;
+        }
+        .card-img img{
+            width: 100%;
+            height: 100%;
+            transition: all 2s;
+        }
+        .card-img img:hover{
+            transform: scale(1.5);
+        }
+        .card-content{
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        .card-content h3{
+            margin-top: 10px;
+            
+        }
+        .view{
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            font-weight: 700;
+            border-radius: 10px;
+        }
+        footer{
+            height: 100px;
+            background-color: darkgoldenrod;
+            text-align: center;
+            font-size: 40px;
+            padding: 30px;
+        }
+        .fixed{
+            width: 100px;
+            height: 50px;
+            background-color: darkred;
+            color: white;
+            font-weight: 900;
+            border: none;
+            border-radius: 10px;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+
+        }
+
+.content {
+    height: 150px;
+    width: 100%;
+}
+
+.item {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+
+}
+
+.container:hover .item {
+    display: block;
+}
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+      <p>This is a header section</p>
+    </header>
+    <nav>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+        <style>
+        .icon{
+            font-size:60px;
+            color: rgb(28, 143, 103);
+        }
+        </style>
+    </head>
+    <body>
+        <i class="fas fa-wand-magic icon" ></i>
+    </body>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="home.html">Home</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="imagesilder">
+        <img src="img/cover1.jpg" alt="coverimage">
+        <button class="left">&lt;</button>
+        <button class="right">&gt;</button>
+
+      </section>
+      <section class="card">
+        <div class="card-section">
+            <div class="card-img">
+                <img src="img/laptop2.jpg" alt="latop">
+            </div>
+            <div class="card-content">
+                <h1>Dell Laptop</h1>
+                <h3>Rs. 1200000</h3>
+                <button class="view">View Detail</button>
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="card-img">
+                <img src="img/laptop2.jpg" alt="latop">
+            </div>
+
+                
+            <div class="card-content">
+                <h1>Dell Laptop</h1>
+                <h3>Rs. 1200000</h3>
+                <button class="view">View Detail</button>
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="card-img">
+                <img src="img/laptop2.jpg" alt="latop">
+            </div>
+            <div class="card-content">
+                <h1>Dell Laptop</h1>
+                <h3>Rs. 1200000</h3>
+                <button class="view">View Detail</button>
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="card-img">
+                <img src="img/laptop2.jpg" alt="latop">
+            </div>
+            <div class="card-content">
+                <h1>Dell Laptop</h1>
+                <h3>Rs. 1200000</h3>
+                <button class="view">View Detail</button>
+            </div>
+        </div>  
+        <div class="card-section">
+            <div class="card-img">
+                <img src="img/laptop2.jpg" alt="latop">
+            </div>
+            <div class="card-content">
+                <h1>Dell Laptop</h1>
+                <h3>Rs. 1200000</h3>
+                <button class="view">View Detail</button>
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="demo">
+            <div class="card-img">
+                <img src="img/laptop2.jpg" alt="latop">
+            </div>
+            <div class="card-content">
+                <h1>Dell Laptop</h1>
+                <h3>Rs. 1200000</h3>
+                <button class="view">View Detail</button>
+                
+                    
+                <div class="content">
+                </div>
+                <div class="item"></div>
+            </div>
+            </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>THis is a footer section</p>
+    </footer>
+
+
+    
+    <button class="fixed">
+        Message Me
+    </button>
+
+</body>
+</html>

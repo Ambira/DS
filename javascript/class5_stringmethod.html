@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let text = "Welcome いらさいませ 今日は 金曜日 です。"
+        document.write(`${text} <br>`)
+
+        //indexing
+        document.write(`${text[12]} <br>`)
+
+        document.write(`${text.toUpperCase()} <br>`)
+
+        document.write(`${text.toLocaleLowerCase()} <br>`)
+
+        document.write(`${text.length} <br>`)
+
+        document.write(`${text.indexOf('javascript')} <br>`)
+
+        document.write(`${text.lastIndexOf('javascript')} <br>`)
+
+        document.write(`${text.split('javascript')} <br>`)
+
+
+        document.write("string methods ~ remaining <br>")
+
+        document.write(`${text.charAt(0)} <br>`);
+
+        document.write(`${text.substring(0, 7)} <br>`);
+
+        document.write(`${text.slice(8)}  slice 1 <br>`);
+
+        document.write(`${text.slice(7,26)} slice 2 <br>`);
+
+        document.write(`${text.slice(-4)} slice 3 <br>`);
+
+        document.write(`${text.replace('Welcome', 'Hello')} <br>`);
+
+        document.write(`${text.includes('いらさいませ')} <br>`);
+
+        document.write(`${text.startsWith('Welcome')} <br>`);
+
+        document.write(`${text.endsWith('いらさいませ')} <br>`);
+
+        document.write(`${text.repeat(2)} <br>`);
+
+        let additionalText = " Have a nice day!";
+        document.write(`${text.concat(additionalText)} <br>`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <script>
+        // let date= Number(prompt("Enter a number"))
+        // document.write(date.getDate())
+        // switch(date.getDate()){
+        //     case 0:
+        //         document.write("Sunday")
+        //         break;
+        //         case 1:
+        //         document.write("Monday")
+        //         break;
+
+        //         case 2: 
+        //         document.write("Tuesday")
+        //         break;
+
+        //         case 3:
+        //         document.write("Wednesday")
+        //         break;
+
+        //         case 4:
+        //         document.write("Thursday")
+        //         break;
+
+        //         case 5:
+        //         document.write("Friday")
+        //         break;
+
+        //         case 6:
+        //         document.write("Saturday")
+        //         break;
+
+        //         default:
+        //         document.write("Invalid")
+
+        // }
+
+        let userpin = 1234;
+let pin = Number(prompt("Enter a pin: "));
+
+switch(pin) {
+    case userpin:
+        alert("Welcome to ATM Dashboard: ");
+        let number = Number(prompt("Choose a number\n 1. Fast Cash\n 2. Withdraw\n 3. Balance Inquiry\n 4. Cancel"));
+        
+        switch(number) {
+            case 1: // Fast Cash Section
+                let fast = Number(prompt("Choose a number\n 1. 1000\n 2. 2000\n 3. 5000\n 4. 10000"));
+                switch(fast) {
+                    case 1:
+                        alert("You have withdrawn Rs. 1000");
+                        break;
+                    case 2:
+                        alert("You have withdrawn Rs. 2000");
+                        break;
+                    case 3:
+                        alert("You have withdrawn Rs. 5000");
+                        break;
+                    case 4:
+                        alert("You have withdrawn Rs. 10000");
+                        break;
+                    default:
+                        alert("Invalid amount");
+                        break;
+                }
+                alert("Thank you for using ATM services");
+                break;
+            
+            case 2: // Withdraw Section
+                alert("Withdraw Section");
+                break;
+            
+            case 3: // Balance Inquiry
+                alert("Balance inquiry section");
+                break;
+
+            case 4: // Cancel
+                alert("Transaction canceled");
+                break;
+
+            default:
+                alert("Invalid selection");
+                break;
+        }
+        break;
+    
+    default:
+        alert("Invalid pin");
+        break;
+}
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+</head>
+<body>
+    <script>
+      
+        let balance = 100; 
+        let pin = "1234";   
+
+
+        let userPin = prompt("Enter your ATM PIN:");
+
+        if (userPin === pin) {
+            alert("Welcome to your ATM Dashboard!");
+
+            let atmOperation = prompt("Choose an operation:\n1. Check Balance\n2. Deposit\n3. Withdraw\n4. Exit");
+
+            if (atmOperation === "1") {
+             
+                alert("Your current balance is: $" + balance);
+
+            } else if (atmOperation === "2") {
+                let depositAmount = parseFloat(prompt("Enter the amount you want to deposit:"));
+                if (depositAmount > 0) {
+                    balance += depositAmount;
+                    alert("You deposited $" + depositAmount + ". Your new balance is: $" + balance);
+                } else {
+                    alert("Invalid deposit amount.");
+                }
+
+            } else if (atmOperation === "3") {
+                let withdrawAmount = parseFloat(prompt("Enter the amount you want to withdraw:"));
+                if (withdrawAmount > 0) {
+                    if (withdrawAmount <= balance) {
+                        balance -= withdrawAmount;
+                        alert("You withdrew $" + withdrawAmount + ". Your new balance is: $" + balance);
+                    } else {
+                        alert("Insufficient balance!");
+                    }
+                } else {
+                    alert("Invalid withdrawal amount.");
+                }
+
+            } else if (atmOperation === "4") {
+                // Exit the ATM
+                alert("Thank you for using the ATM. Goodbye!");
+
+            } else {
+                // Invalid choice
+                alert("Invalid choice. Please try again.");
+            }
+
+        } else {
+            // Wrong PIN entered
+            alert("Incorrect PIN. Access Denied.");
+        }
+    </script>
+</body>
+</html>

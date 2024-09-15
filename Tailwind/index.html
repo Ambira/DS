@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f4d03f'
+                    },
+                    spacing: {
+                        '23': '23%',
+                        '47': '47%',
+                        '97': '97%',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="flex bg-primary justify-between items-center lg:px-20 md:px-14 px-10 py-5">
+        <div class="logo-flex items-center"></div>
+        <div class="nav-logo w-10 h-10">
+            <img src="https://th.bing.com/th/id/R.831c66cca65e89df06a1420435333ecd?rik=wxPxJ%2fIQ3G2TlQ&pid=ImgRaw&r=0" alt="Logo" class="w-full h-full rounded-full hover:animate-bounce">
+        </div>
+        <ul class="flex">
+            <li><a href="#" class="pe-5 hover:underline hidden lg:block">Home</a></li>
+            <li><a href="#" class="pe-5 hover:underline hidden lg:block">About</a></li>
+            <li><a href="#" class="pe-5 hover:underline hidden lg:block">Services</a></li>
+            <li><a href="#" class="pe-5 hover:underline hidden lg:block">Portfolio</a></li>
+            <li><a href="#" class="pe-5 hover:underline hidden lg:block">Contact</a></li>
+            <li><a href="#" class="pe-5 hover:underline hidden lg:block">Blog</a></li>
+            <li class="block lg:hidden"><a href="#"><i class="bi bi-list text-3xl"></i></a></li>
+        </ul>
+    </nav>
+    
+    <section class="img-section w-full h-100 relative">
+        <div class="box-color bg-black opacity-50 absolute top-0 right-0 bottom-0 left-0"></div>
+        <img src="https://americasmi.com/wp-content/uploads/2022/08/ecommerce-projections-ami_02.jpg" alt="coverimage" class="w-full h-full object-fill">
+        <i class="bi bi-arrow-right-circle-fill text-2xl absolute top-1/2 right-5 text-primary"></i>
+        <i class="bi bi-arrow-left-circle-fill text-2xl absolute top-1/2 left-5 text-primary"></i>
+    </section>
+
+    <div class="bg-orange-300">
+        <div class="flex flex-wrap justify-evenly py-5 max-w-screen-lg mx-auto">
+            <div class="box w-97 h-72 rounded-lg bg-blue-400 mt-5 md:w-47 lg:w-23 md:bg-green-400 lg:bg-red-100">
+                <div class="card-img h-32 overflow-hidden">
+                    <img src="https://blogs.windows.com/wp-content/uploads/prod/2016/09/Dell-Sept-14.jpg" alt="Laptop" class="w-full h-full object-cover rounded-t-lg transition-transform duration-1000 hover:scale-150">
+                </div>
+                <div class="card-body h-32 pt-5 ps-2">
+                    <h1 class="text-xl text-green-500 font-bold">Dell Laptop</h1>
+                    <h1 class="text-lg text-green-500 font-bold">Rs. 150000</h1>
+                    <!-- Rating using Bootstrap Icons -->
+                    <div class="flex mt-2">
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-half text-yellow-500"></i>
+                    </div>
+                    <!-- Add View Details button -->
+                     <div class="w-full mt-2"></div>
+                    <button class="bg-blue-500 text-white text-center px-4 py-2 rounded-lg hover:bg-green-500 ">
+                        View Detail</button>
+                </div>
+            </div>
+            <div class="box w-97 h-72 rounded-lg bg-blue-400 mt-5 md:w-47 lg:w-23 md:bg-green-400 lg:bg-red-100">
+                <div class="card-img h-32 overflow-hidden">
+                    <img src="https://blogs.windows.com/wp-content/uploads/prod/2016/09/Dell-Sept-14.jpg" alt="Laptop" class="w-full h-full object-cover rounded-t-lg transition-transform duration-1000 hover:scale-150">
+                </div>
+                <div class="card-body h-32 pt-5 ps-2">
+                    <h1 class="text-xl text-green-500 font-bold">Dell Laptop</h1>
+                    <h1 class="text-lg text-green-500 font-bold">Rs. 150000</h1>
+                    <!-- Rating using Bootstrap Icons -->
+                    <div class="flex mt-2">
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-half text-yellow-500"></i>
+                    </div>
+                    <!-- Add View Details button -->
+                     <div class="w-full mt-2"></div>
+                    <button class="bg-blue-500 text-white text-center px-4 py-2 rounded-lg hover:bg-green-500 ">
+                        View Detail</button>
+                </div>
+            </div>
+            <div class="box w-97 h-72 rounded-lg bg-blue-400 mt-5 md:w-47 lg:w-23 md:bg-green-400 lg:bg-red-100">
+                <div class="card-img h-32 overflow-hidden">
+                    <img src="https://blogs.windows.com/wp-content/uploads/prod/2016/09/Dell-Sept-14.jpg" alt="Laptop" class="w-full h-full object-cover rounded-t-lg transition-transform duration-1000 hover:scale-150">
+                </div>
+                <div class="card-body h-32 pt-5 ps-2">
+                    <h1 class="text-xl text-green-500 font-bold">Dell Laptop</h1>
+                    <h1 class="text-lg text-green-500 font-bold">Rs. 150000</h1>
+                    <!-- Rating using Bootstrap Icons -->
+                    <div class="flex mt-2">
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-half text-yellow-500"></i>
+                    </div>
+                    <!-- Add View Details button -->
+                     <div class="w-full mt-2"></div>
+                    <button class="bg-blue-500 text-white text-center px-4 py-2 rounded-lg hover:bg-green-500 ">
+                        View Detail</button>
+                </div>
+            </div>
+            <div class="box w-97 h-72 rounded-lg bg-blue-400 mt-5 md:w-47 lg:w-23 md:bg-green-400 lg:bg-red-100">
+                <div class="card-img h-32 overflow-hidden">
+                    <img src="https://blogs.windows.com/wp-content/uploads/prod/2016/09/Dell-Sept-14.jpg" alt="Laptop" class="w-full h-full object-cover rounded-t-lg transition-transform duration-1000 hover:scale-150">
+                </div>
+                <div class="card-body h-32 pt-5 ps-2">
+                    <h1 class="text-xl text-green-500 font-bold">Dell Laptop</h1>
+                    <h1 class="text-lg text-green-500 font-bold">Rs. 150000</h1>
+                    <!-- Rating using Bootstrap Icons -->
+                    <div class="flex mt-2">
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-fill text-yellow-500"></i>
+                        <i class="bi bi-star-half text-yellow-500"></i>
+                    </div>
+                    <!-- Add View Details button -->
+                     <div class="w-full mt-2"></div>
+                    <button class="bg-blue-500 text-white text-center px-4 py-2 rounded-lg hover:bg-green-500 ">
+                        View Detail</button>
+                </div>
+            </div>
+            
+        </div>    
+        
+    </div>
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto flex flex-wrap justify-between items-start gap-8">
+            
+            <!-- Footer Links Section -->
+            <div class="footer-list flex flex-wrap justify-between gap-8 w-full">
+                <!-- Footer Column Example -->
+                <div class="w-full md:w-1/4">
+                    <h5 class="footer-heading font-bold mb-3">Careers</h5>
+                    <ul class="flex flex-col space-y-2">
+                        <li><a href="#" class="p-0 footer-link text-gray-400 hover:underline">Business Development Manager</a></li>
+                        <li><a href="#" class="p-0 footer-link text-gray-400 hover:underline">Head Of Sales</a></li>
+                        <li><a href="#" class="p-0 footer-link text-gray-400 hover:underline">Sales Representative</a></li>
+                        <li><a href="#" class="p-0 footer-link text-gray-400 hover:underline">Brand Ambassador</a></li>
+                        <li><a href="#" class="p-0 footer-link text-gray-400 hover:underline">Senior Python Developer</a></li>
+                        <li><a href="#" class="p-0 footer-link text-gray-400 hover:underline">Blockchain Technologist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Main Footer Navigation Links -->
+                <div class="w-full md:w-1/4">
+                    <h5 class="footer-heading font-bold mb-3">Quick Links</h5>
+                    <ul class="flex flex-col space-y-2">
+                        <li><a href="#" class="pe-5 hover:underline text-gray-400">Home</a></li>
+                        <li><a href="#" class="pe-5 hover:underline text-gray-400">About</a></li>
+                        <li><a href="#" class="pe-5 hover:underline text-gray-400">Services</a></li>
+                        <li><a href="#" class="pe-5 hover:underline text-gray-400">Portfolio</a></li>
+                        <li><a href="#" class="pe-5 hover:underline text-gray-400">Contact</a></li>
+                        <li><a href="#" class="pe-5 hover:underline text-gray-400">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4 mt-8 md:mt-0">
+                <!-- Facebook Button -->
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i class="bi bi-facebook text-2xl"></i>
+                </a>
+                <!-- Instagram Button -->
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i class="bi bi-instagram text-2xl"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="container mx-auto text-center mt-8">
+            <p class="text-gray-500">&copy; 2024 E-commerce Company. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambira Pradhan Portfolio</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .icon{
+            font-size: 40px;
+            color: rgb(227, 240, 235);
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header{
+            height: 100px;
+            background-image: url('img/cover2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            color: aliceblue;
+            font-size: 40px;
+            padding: 30px;
+        }
+        nav{
+            height: 60px;
+            background-color: darkgreen;
+            text-align: center;
+            padding: 0 40px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .about, .interests {
+            margin: 20px 0;
+        }
+        .about h2, .interests h2 {
+            font-size: 30px;
+            color: darkgoldenrod;
+            margin-bottom: 10px;
+        }
+        .about p, .interests p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            width: 300px;
+            height: 300px;
+            background-color: darkcyan;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            color: white;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery-item h3 {
+            margin: 10px 0;
+        }
+        footer{
+            height: 60px;
+            background-color: darkgreen;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+        }
+        .fixed{
+            width: 100px;
+            height: 50px;
+            background-color: darkred;
+            color: white;
+            font-weight: 900;
+            border: none;
+            border-radius: 10px;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <i class="fas fa-wand-magic icon" ></i>
+        <p>Ambira Pradhan Portfolio</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Ambira Pradhan, a passionate individual who has just completed my +2. I have a strong interest in art, music, writing, and computers. I'm always eager to explore new creative avenues and expand my knowledge in various fields.</p>
+        </section>
+        <section id="interests" class="interests">
+            <h2>My Interests</h2>
+            <p>I enjoy expressing myself through different forms of art, whether it's painting, digital art, or music. Writing is another passion of mine, where I can let my imagination run wild. I'm also fascinated by the world of technology and enjoy learning about computers and how they work.</p>
+        </section>
+       
+    </main>
+    <footer>
+        <p>&copy; 2024 Ambira Pradhan</p>
+    </footer>
+
+    <button class="fixed">
+        Message Me
+    </button>
+
+</body>
+</html>

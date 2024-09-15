@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For inside While</title>
+</head>
+<body>
+    <h1>For inside While</h1>
+
+    <script>
+        let i = 1;
+        while (i <= 5) {
+            document.write(`While loop iteration ${i}<br>`);
+            for (let j = 1; j <= 3; j++) {
+                document.write(` ${i}x${j} = ${i*j}<br>`);
+            }
+            document.write('<br>');
+            i++;
+        }
+
+        for (let i = 1; i <= 7; i++) {
+            document.write(`For loop iteration ${i}<br>`);
+            let j = 1;
+            while (j <= 3) {
+                document.write(`While loop: ${i}x${j} = ${i*j}<br>`);
+                j++;
+            }
+            document.write('<br>');
+        }
+
+       
+        while (i <=7) {
+            document.write(`Outer While loop iteration ${i}<br>`);
+            let j = 1;
+            while (j <= 3) {
+                document.write(`Inner While loop: ${i}x${j} = ${i*j}<br>`);
+                j++;
+            }
+            document.write('<br>');
+            i++;
+        }
+    </script>
+</body>
+</html>

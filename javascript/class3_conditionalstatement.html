@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <h1>
+        i> If else. If there is only one Condition to check <br>
+        ii> Else if. If there is more than one Condition to check <br>
+        iii> nested if else <br>
+
+    </h1>
+
+    <script>
+        // let username ='ambira'
+        // let user_input = prompt("Enter your Username: ")
+        // if (user_input == username){
+        //     alert("welcome to user dashboard")
+        // }
+        // else{
+        //     alert("Wrong username")
+        // }
+
+        // condition to check if user is elligible for citizenship or not
+        
+    //     let user =prompt("Enter your age: ")
+    //     if (user>=16){
+    //         alert("User is an eligible citizen")
+    //     }
+    //     else{
+    //         alert("user is not an eligible citizen")
+    //     }
+
+    // let username = 'ambira'
+    // let adminuser = 'admin'
+    // let user_input = prompt("Enter your Username: ")
+    // if (user_input == username){
+    // }
+    // else if(user_input == admin){
+    //     alert("Welcome to admin dashboard")
+    // }
+    // else{
+    //     alert("Wrong username")
+    // }
+
+
+    // let user_input = prompt("Enter your number: ")
+    // if (user_input%2 ==0){
+    //     alert("number is even")
+    // }
+    // else{
+    //     alert("nbumber is odd")
+    // }
+
+
+    // let num1 =prompt("Enter first number")
+    // if (num1%3 == 0 && num1%5==0){
+    //     alert("fizzbuzz")
+    // }
+    //     else if(num1%5==0) {
+    //         alert("fizz")
+    //     }
+
+    //     else if(num1%3==0){
+    //         alert("buzz")
+    //     }
+
+    //     else{
+    //         alert(`${number}`)
+    //     }
+    
+
+    //nested if
+
+    let username = 'ambira'
+    let adminuser = 'admin'
+    let user_input = prompt("Enter your Username: ")
+    if (user_input == username){
+        alert("Welcome to user dashboard")
+    }
+    else if(user_input == adminuser){
+        alert("Welcome to admin dashboard")
+        let attendance = prompt("Enter an attendance if staff\n full-full shift \n half-half shift\n morning-morning shift\n leave-leave")
+
+        if(attendance =="Full"){
+            alert("Staff has done full shift")
+        }
+        else if(attendance == "Half"){
+            alert("Staff has done half shift")
+        }
+        else if(attendance == "Morning"){
+            alert("Staff has done Morning shift")
+        }
+        else if(attendance == "Leave"){
+            alert("Staff is on leave")
+        }
+        else{
+            alert("Invalid attendance")
+        }
+    }
+    else{
+        alert("Wrong username")
+    }
+     </script>
+</body>
+</html>
+
+atm machine

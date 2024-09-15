@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Document</title>
+    
+</head>
+<body>
+    <div class="bg-orange-300">
+    <div class="flex flex-wrap justify-evenly py-5 max-w-screen-lg mx-auto">
+        <div class="box w-97 h-40 bg-blue-400 mt-5 md:w-47 lg:w23 lg-mt-0 md:bg-green-400 lg:bg-red-400 "></div>
+        <div class="box w-97 h-40 bg-blue-400 mt-5 md:w-47 lg:w23 lg-mt-0 md:bg-green-400 lg:bg-red-400 "></div>
+        <div class="box w-97 h-40 bg-blue-400 mt-5 md:w-47 lg:w23 lg-mt-0 md:bg-green-400 lg:bg-red-400 "></div>
+        <div class="box w-97 h-40 bg-blue-400 mt-5 md:w-47 lg:w23 lg-mt-0 md:bg-green-400 lg:bg-red-400 "></div>
+        <div class="box w-97 h-40 bg-blue-400 mt-5 md:w-47 lg:w23 lg-mt-0 md:bg-green-400 lg:bg-red-400 "></div>
+        <div class="box w-97 h-40 bg-blue-400 mt-5 md:w-47 lg:w23 lg-mt-0 md:bg-green-400 lg:bg-red-400 lg:mt-5 "></div>
+    </div>    
+</div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              spacing:{
+                '23':'23%',
+                '97':"97%",
+                '47':'47%'
+
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>

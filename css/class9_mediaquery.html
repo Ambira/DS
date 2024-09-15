@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Responsive Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: darkkhaki;
+        }
+
+        nav ul {
+            list-style-type: none; /* Corrected */
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+        }
+
+        i {
+            font-size: 30px;
+            display: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 10px 0;
+            background-color: bisque;
+        }
+
+        .demo {
+            width: 24%;
+            height: 150px;
+            background-color: aquamarine;
+        }
+
+        /* For medium screen */
+        @media screen and (max-width: 992px) {
+            .demo {
+                width: 47%;
+                background-color: darkgoldenrod;
+            }
+
+            .one {
+                margin-top: 10px;
+            } 
+            .mobilehidden {
+                display: none;
+            }
+
+            i {
+                display: block; /* Show the icon on medium screens */
+            }
+        }
+
+        /* For small screen */
+        @media screen and (max-width: 562px) {
+            .demo {
+                width: 95%;
+                background-color: darkgreen;
+            }
+
+            .one {
+                margin-top: 10px;
+            }
+
+            i {
+                display: block; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="mobilehidden"><a href="#">Home</a></li>
+            <li class="mobilehidden"><a href="#">Home</a></li>
+            <li class="mobilehidden"><a href="#">Home</a></li>
+            <li class="mobilehidden"><a href="#">Home</a></li>
+            <li><a href="#"><i class="hi hi-list"></i></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="demo"></div>
+        <div class="demo small"></div>
+        <div class="demo one"></div>
+        <div class="demo one"></div>
+    </div>
+</body>
+</html>

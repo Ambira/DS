@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+        .container {
+            height: 300px;
+            width: 400px;
+            margin: 10px auto;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        .demo {
+            height: 150px;
+            width: 100%;
+            background: linear-gradient(to top right, #07b8a0, #ad0868);
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .demo p{
+            padding-top: 30px;
+
+        }
+
+        .content {
+            height: 150px;
+            width: 100%;
+        }
+
+        .item {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+
+        }
+
+        .container:hover .item {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="demo">
+            <p>devops<br> ops</p>
+        </div>
+        <div class="content">
+        </div>
+        <div class="item"></div>
+    </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call back function</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        const news = [
+            {newTitle:"First news title", description:"First news description"},
+            {newTitle:"Second news title", description:"Second news description"}
+        ]
+
+        const showNews = ()=>{
+            setTimeout( ()=>{
+            let result = ""
+            news.forEach(post=>{
+                result+=`<li>${post.newTitle}</li>`
+            })
+            document.querySelector(`div`).innerHTML = result
+
+            }, 2000)
+        }
+
+
+        const addNews = (data, cb_function)=>{
+            setTimeout(()=>{
+                news.push(data)
+                cb_function()
+            }, 4000)
+        }
+        
+        addNews({newTitle:"addTitle", description:"addDescription"},showNews)
+    </script>
+    
+</body>
+</html>

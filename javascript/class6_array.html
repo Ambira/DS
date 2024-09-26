@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+
+    <script>
+        let p_lang= ['Python','Javascript', 'PHP', 'JAVA', 'C++']
+
+        //indexing
+        document.write(p_lang[0],"<br>")
+        document.write(p_lang.length, "<br>")
+        document.write(p_lang)
+
+        p_lang.push("Go lang")
+        document.write(p_lang,"<br>")
+
+        p_lang.pop()
+        document.write(p_lang,"<br>")
+
+        p_lang.unshift('Ruby')
+        document.write(p_lang,"<br>")
+
+        p_lang.shift()
+        document.write(p_lang,"<br>")
+
+        p_lang.splice(3,2,'Ruby','Python')
+        document.write(p_lang,"<br>")
+
+        document.write(p_lang.sort(),'<br>')
+
+        document.write(p_lang.reverse(),'<br>')
+
+        m_lang=["HTML","CSS"]
+        document.write(p_lang.concat(m_lang),"<br>")
+
+    </script>
+    
+</body>
+</html>

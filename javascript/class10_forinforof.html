@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <div id="studentTable"></div>
+    
+    <h1>Characters in String</h1>
+    <div id="stringCharacters"></div>
+
+    <script>
+        // Student details object
+        const student_details = {
+            first_name: "Hari",
+            last_name: "Shrestha",
+            address: "Kathmandu",
+            email: "hari@gmail.com",
+            education: "Masters in IT"
+        };
+
+        // Function to display student details in a table
+        function showStudentDetails() {
+            let table = `<table border="1">
+                            <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                            </tr>`;
+
+            for (let key in student_details) {
+                table += `<tr>
+                            <td>${key}</td>
+                            <td>${student_details[key]}</td>
+                          </tr>`;
+            }
+
+            table += `</table>`;
+            document.getElementById("studentTable").innerHTML = table;
+        }
+
+        // Display student details in table
+        showStudentDetails();
+
+        // String to iterate over using for...of loop
+        const string = "hellooooo";
+        let charOutput = '';
+
+        // Loop over each character in the string
+        for (const value of string) {
+            charOutput += `${value} <br>`;
+        }
+
+        // Display the characters from the string
+        document.getElementById("stringCharacters").innerHTML = charOutput;
+    </script>
+</body>
+</html>

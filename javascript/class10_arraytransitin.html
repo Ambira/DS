@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // forEach - Squares each number and prints it
+        let num = [1, 2, 3, 4, 5];
+        num.forEach(n => {
+            document.write(`${n ** 2} <br>`);
+        });
+
+        // map - Returns a new array with squared values
+        let another_num = [2, 3, 4, 5, 6];
+        let another_array = another_num.map(n => {
+            return n ** 2;
+        });
+        document.write(another_array, "<br>");  // Output the array created by map
+
+        // reduce - Calculates the total price by summing up all elements in the array
+        let product_price = [1, 2, 3, 4, 5];
+        let total_price = product_price.reduce((initial, current) => {
+            return initial + current;
+        }, 0);
+        document.write(total_price, "<br>");  // Output total price
+
+        // every - Checks if all elements in the array satisfy the condition (n > 2)
+        let every_condition = product_price.every(n => {
+            return n > 2;
+        });
+        document.write(every_condition, "<br>");  // Output: false because not all are > 2
+
+        // some - Checks if at least one element in the array satisfies the condition (n > 2)
+        let some_condition = product_price.some(n => {
+            return n > 2;
+        });
+        document.write(some_condition, "<br>");  // Output: true because some are > 2
+
+        // find - Finds the first element greater than 2
+        let find_condition = product_price.find(n => {
+            return n > 2;
+        });
+        document.write(find_condition, "<br>");  // Output: 3, the first number greater than 2
+
+        // includes - Checks if the array includes the value 3
+        let includes_value = product_price.includes(3);
+        document.write(includes_value, "<br>");  // Output: true because 3 is in the array
+
+        // spread operator - Copies one array into another
+        let spread_example = [...product_price, 6, 7, 8];
+        document.write(spread_example, "<br>");  // Output: 1,2,3,4,5,6,7,8
+
+    </script>
+</body>
+</html>

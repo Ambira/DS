@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(firstname,lastname, section){
+                //attribute
+                this.firstname = firstname
+                this.lastname = lastname
+                this.section = section
+
+                document.write(`${firstname}`)
+            }
+            display(){
+                return `Student full name is ${this.firstname} ${this.lastname}. Section number is ${this.section}`
+            }
+        }
+
+        const obj_student = new Student("Ram","Tamang","Section-A")
+        document.write(obj_student.display90)
+    </script>
+</body>
+</html>
